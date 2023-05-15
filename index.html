@@ -2,31 +2,33 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ИНУАЖ</title>
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="public/style.css" />
 </head>
 
 <body>
-    <!-- header -->
-    <header class="px-2 border-b flex items-center justify-between">
-        <a class="uppercase font-bold text-purple-800" href="">webDev</a>
-        <nav class="flex items-center">
-            <ul class="inline-flex items-center">
-                <li><a class="header-link" href="#">home</a></li>
-                <li><a class="header-link" href="#">about</a></li>
-                <li><a class="header-link" href="#">contact</a></li>
-            </ul>
-            <ul class="inline-flex items-center">
-                <li><button class="header-button">login</button> </li>
-                <li><button class="header-button">create account</button></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
+    <div class="max-w-screen-xl mx-auto">
+
+        <!-- header -->
+        <header class="px-2 border-b flex items-center justify-between">
+            <a class="uppercase font-bold text-purple-800" href="">webDev</a>
+            <nav class="flex items-center">
+                <ul class="inline-flex items-center">
+                    <li><a class="header-link" href="#">home</a></li>
+                    <li><a class="header-link" href="#">about</a></li>
+                    <li><a class="header-link" href="#">contact</a></li>
+                </ul>
+                <ul class="inline-flex items-center">
+                    <li><button class="header-button">login</button></li>
+                    <li><button class="header-button">create account</button></li>
+                </ul>
+            </nav>
+        </header>
+
         <!-- breadcrumbs -->
         <div class="px-2 flex items-center">
             <div class="py4 overflow-y-auto whitespace-nowrap flex items-center">
@@ -36,7 +38,6 @@
                         <path stroke-linecap="round" stroke-linejoin="round"
                             d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
                     </svg>
-
                 </a>
                 <span class="mx-2 text-gray-300">
                     <!-- chevrone -->
@@ -57,115 +58,150 @@
             </div>
         </div>
 
-        <!-- post cards -->
-        <section class="px-2">
-            <a class="block mb-10" href="#">
-                <div class="flex">
-                    <div>
-                        <h3 class="mt-3  mb-2 text-gray-700 font-bold text-2xl">margin проставлять только слева и сверху
-                        </h3>
-                        <p class="text-gray-700 ">lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Autem doloremque voluptatum commodi excepturi laudantium consectetur incidunt,
-                            modi officiis unde ex non quisquam debitis eius, provident consequatur animi
-                            dolores sequi quae, omnis aspernatur! Eum, sit. Nam totam iusto labore impedit et</p>
-                    </div>
-                </div>
-            </a>
-
-            <a class="block mb-10" href="#">
-                <div class="flex">
-                    <div>
-                        <h3 class="mt-3  mb-2 text-gray-700 font-bold text-2xl">не сокращай, буквы бесплатные</h3>
-                        <p class="text-gray-700 ">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Autem doloremque voluptatum commodi excepturi laudantium consectetur incidunt,
-                            modi officiis unde ex non quisquam debitis eius, provident consequatur animi
-                            dolores sequi quae, omnis aspernatur! Eum, sit. Nam totam iusto labore impedit et</p>
-                    </div>
-                </div>
-            </a>
-
-            <a class="block mb-10" href="#">
-                <div class="flex">
-                    <div>
-                        <h3 class="mt-3  mb-2 text-gray-700 font-bold text-2xl">никаких общих названий</h3>
-                        <p class="text-gray-700 ">не footer_item а footer_link</p>
-                    </div>
-                </div>
-            </a>
-        </section>
-
-        <!-- pagination -->
-        <div class="mt-20 mb-10 ">
-            <ul class="flex justify-center">
-                <li><a class="pagination-links rounded-l-lg" href="#">previous</a></li>
-                <li><a class="pagination-links" href="#" href="#">1</a></li>
-                <li><a class="pagination-links" href="#" href="#">2</a></li>
-                <li><a class="pagination-links text-blue-600 hover:bg-blue-100 hover:text-blue-600" href="#">3</a></li>
-                <li><a class="pagination-links" href="#" href="#">4</a></li>
-                <li><a class="pagination-links" href="#" href="#">5</a></li>
-                <li><a class="pagination-links rounded-l-lg" href="#" href="#">next</a></li>
-            </ul>
-        </div>
-
-
-        <!-- divider -->
-        <div class="border border-dotted"></div>
-        <!-- subscribe -->
-
-        <div class="my-5">
-            <h5 class="font-bold text-lg uppercase text-gray-700">subscribe</h5>
-            <p class="text-gray-600 mb-4">subscribe to our updates</p>
-            <input placeholder="your email adress" type="email"
-                class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600">
-            <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">subscribe</button>
-        </div>
-        <div class="border border-dotted"></div>
-
-
-    </main>
-
-    <footer class="border-t mt-10 py-10 px-2">
-        <div>
+        <main>
             <div>
-                <h6 class="font-semibold to-gray-700 mb-3">company</h6>
-                <ul>
-                    <li><a class="inline-block to-gray-500 py-2 hover:underline" href="#">team</a></li>
-                    <li><a class="inline-block to-gray-500 py-2 hover:underline" href="#">about my work</a></li>
-                </ul>
-            </div>
-        </div>
+                <!-- post cards -->
+                <section class="px-2 flex">
+                    <a class="block mb-10" href="#">
+                        <div class="flex">
+                            <div>
+                                <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                                    margin проставлять только слева и сверху
+                                </h3>
+                                <p class="text-gray-700">
+                                    lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Autem doloremque voluptatum commodi excepturi laudantium
+                                    consectetur incidunt, modi officiis unde ex non quisquam
+                                    debitis eius, provident consequatur animi dolores sequi quae,
+                                    omnis aspernatur! Eum, sit. Nam totam iusto labore impedit et
+                                </p>
+                            </div>
+                        </div>
+                    </a>
 
-        <div>
-            <div>
-                <h6 class="font-semibold to-gray-700 mb-3">content</h6>
-                <ul>
-                    <li><a class="footer-link" href="#">block</a></li>
-                    <li><a class="footer-link" href="#">policy</a></li>
-                    <li><a class="footer-link" href="#">documentation</a></li>
-                </ul>
+                    <a class="block mb-10" href="#">
+                        <div class="flex">
+                            <div>
+                                <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                                    не сокращай, буквы бесплатные
+                                </h3>
+                                <p class="text-gray-700">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                    Autem doloremque voluptatum commodi excepturi laudantium
+                                    consectetur incidunt, modi officiis unde ex non quisquam
+                                    debitis eius, provident consequatur animi dolores sequi quae,
+                                    omnis aspernatur! Eum, sit. Nam totam iusto labore impedit et
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="block mb-10" href="#">
+                        <div class="flex">
+                            <div>
+                                <h3 class="mt-3 mb-2 text-gray-700 font-bold text-2xl">
+                                    никаких общих названий
+                                </h3>
+                                <p class="text-gray-700">не footer_item а footer_link</p>
+                            </div>
+                        </div>
+                    </a>
+                </section>
+
+                <!-- pagination -->
+                <div class="mt-20 mb-10">
+                    <ul class="flex justify-center">
+                        <li>
+                            <a class="pagination-links rounded-l-lg" href="#">previous</a>
+                        </li>
+                        <li><a class="pagination-links" href="#" href="#">1</a></li>
+                        <li><a class="pagination-links" href="#" href="#">2</a></li>
+                        <li>
+                            <a class="pagination-links text-blue-600 hover:bg-blue-100 hover:text-blue-600"
+                                href="#">3</a>
+                        </li>
+                        <li><a class="pagination-links" href="#" href="#">4</a></li>
+                        <li><a class="pagination-links" href="#" href="#">5</a></li>
+                        <li>
+                            <a class="pagination-links rounded-l-lg" href="#" href="#">next</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div>
-                <h6 class="font-semibold to-gray-700 mb-3">contact us</h6>
-                <ul class="flex">
-                    <li class="mr-2"><a class="footer-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-7 h-7">
-                                <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
-                            </svg>
-                        </a></li>
-                    <li class="mr-2"><a class="footer-link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="w-7 h-7">
-                                <path stroke-linecap="round"
-                                    d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
-                            </svg>
-                        </a></li>
-                </ul>
+
+                <!-- divider -->
+                <div class="border border-dotted"></div>
+
+                <!-- subscribe -->
+                <div class="my-5">
+                    <h5 class="font-bold text-lg uppercase text-gray-700">subscribe</h5>
+                    <p class="text-gray-600 mb-4">subscribe to our updates</p>
+                    <input placeholder="your email adress" type="email"
+                        class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600" />
+                    <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">
+                        subscribe
+                    </button>
+                </div>
+
+                <!-- divider -->
+                <div class="border border-dotted"></div>
+
             </div>
-        </div>
-    </footer>
+
+
+        </main>
+
+        <footer class="border-t mt-10 py-10 px-2">
+            <div class="flex">
+                <div class="mb-5 w-2/5">
+                    <h6 class="font-semibold to-gray-700 mb-3">company</h6>
+                    <ul>
+                        <li>
+                            <a class="inline-block to-gray-500 py-2 hover:underline" href="#">team</a>
+                        </li>
+                        <li>
+                            <a class="inline-block to-gray-500 py-2 hover:underline" href="#">about</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="mb-5 w-2/5">
+                    <h6 class="font-semibold to-gray-700 mb-3">content</h6>
+                    <ul>
+                        <li><a class="footer-link" href="#">block</a></li>
+                        <li><a class="footer-link" href="#">policy</a></li>
+                        <li><a class="footer-link" href="#">documentation</a></li>
+                    </ul>
+                </div>
+
+                <div class="w-1/5">
+                    <h6 class="font-semibold to-gray-700 mb-3">contact us</h6>
+                    <ul class="flex">
+                        <li class="mr-2">
+                            <a class="footer-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="mr-2">
+                            <a class="footer-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                                    <path stroke-linecap="round"
+                                        d="M16.5 12a4.5 4.5 0 11-9 0 4.5 4.5 0 019 0zm0 0c0 1.657 1.007 3 2.25 3S21 13.657 21 12a9 9 0 10-2.636 6.364M16.5 12V8.25" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 </body>
+</div>
 
 </html>
