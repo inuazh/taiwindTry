@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
 
     <div class="max-w-screen-xl mx-auto">
 
@@ -30,9 +30,11 @@
             </nav>
 
             <button class="inline-block md:hidden">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>                  
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
             </button>
 
         </header>
@@ -68,7 +70,10 @@
 
         <!-- banners -->
         <section class="px-2 lg:flex lg:space-x-2">
-            <a class="w-full lg:w-2/3 bg-gradient-to-tr bg-pink-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
+            <a class="w-full lg:w-2/3 bg-gradient-to-tr bg-pink-300 h-96 mb-4 relative rounded inline-block overflow-hidden"
+                href="#">
+                <div class="absolute w-full  object-cover h-full z-10 bg-gradient-to-b from-black/10 to-black/70"></div>
+                <img class="absolute h-full  w-full object-cover z-0" src="public/images/moon.jpg" alt="" srcset="">
                 <div class="p-4 absolute bottom-0 left-0 z-20 ">
                     <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
                         усиленно соблюдаем best practices
@@ -77,6 +82,8 @@
             </a>
 
             <a class="w-full lg:w-1/3 bg-indigo-300 h-96 mb-4 relative rounded inline-block overflow-hidden" href="#">
+                <div class="absolute w-full  object-cover h-full z-10 content-center bg-gradient-to-b from-black/0 to-black/20"></div>
+                <img class="absolute h-full w-full  object-cover object-center self-center content-center z-0" src="public/images/IG.png" alt="" srcset="">
                 <div class="p-4 absolute bottom-0 left-0 z-20 ">
                     <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
                         хлопай ресницами и верстай
@@ -85,8 +92,8 @@
             </a>
         </section>
 
-        <main class="flex">
-            <div class="w-2/3">
+        <main class="lg:flex">
+            <div class="w-full lg:w-2/3">
                 <!-- post cards -->
                 <section class="px-2">
                     <a class="block mb-10" href="#">
@@ -156,26 +163,28 @@
                 </div>
             </div>
 
-            <div class="w-1/3 px-2">
+            <div class="w-full lg:w-1/3 px-2">
 
                 <!-- to do: topic with my soc.net links -->
 
-                <!-- divider -->
-                <div class="border border-dotted"></div>
+                <div class="">
+                    <!-- divider -->
+                    <div class="border border-dotted"></div>
 
-                <!-- subscribe -->
-                <div class="my-5">
-                    <h5 class="font-bold text-lg uppercase text-gray-700">subscribe</h5>
-                    <p class="text-gray-600 mb-4">subscribe to our updates</p>
-                    <input placeholder="your email adress" type="email"
-                        class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600" />
-                    <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">
-                        subscribe
-                    </button>
+                    <!-- subscribe -->
+                    <div class="my-5">
+                        <h5 class="font-bold text-lg uppercase text-gray-700">subscribe</h5>
+                        <p class="text-gray-600 mb-4">subscribe to our updates</p>
+                        <input placeholder="your email adress" type="email"
+                            class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t hover:border-gray-600" />
+                        <button class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full hover:bg-indigo-800">
+                            subscribe
+                        </button>
+                    </div>
+
+                    <!-- divider -->
+                    <div class="border border-dotted"></div>
                 </div>
-
-                <!-- divider -->
-                <div class="border border-dotted"></div>
 
             </div>
 
